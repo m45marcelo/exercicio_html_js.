@@ -1,0 +1,83 @@
+:root{
+    --cor-primaria:#000000;
+    --clara-primaria:#14213D;
+    --mais-clara:#FFFFFF;
+    --cor-secundaria:#FCA311;
+    --clara-secundaria:#E5E5E5;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: var(--clara-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    height: 400px;
+    width: 300px;
+    background-color: var(--cor-secundaria);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulo{
+        
+        margin-top: 20px;      
+        text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+label{
+    font-size: 20px;
+    display: flex;
+    margin-right: 165px;
+}
+.inputs{
+    background-color: var(--mais-clara);
+    width: 250px;
+    padding: 10px;
+    border-radius: 18px;
+    margin: 20px;
+    border: 0;
+}
+.inputs:focus{
+    outline: 0;
+}
+
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+button{
+    width: 250px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--mais-clara);
+    border-radius: 18px;
+    border: 0;
+    
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
